@@ -14,7 +14,7 @@ if (isset($_POST["documento"],$_POST["nombre"],$_POST["apellido"],$_POST["correo
 
     $sql = mysqli_query($baseDeDatos, $inserta);
     if ($sql) {
-        header("location: ../ingreso.html");
+        header("location: ../login.html");
     }else {
         echo "Problemas con la conexion de la base de datos ";
     }

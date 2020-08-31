@@ -5,6 +5,9 @@ const contrasena = document.getElementById("password");
 
 function inicio() {
     boton.disabled = true;
+    boton.classList.remove("boton-ingresoUno");
+    boton.classList.remove("boton-ingreso");
+    boton.classList.add("error")
 }
 inicio();
 
@@ -15,11 +18,13 @@ function validarCampo() {
   
    if ( documento.value.length > 0  && contrasena.value.length > 0) {
        boton.disabled = false;
-       boton.style.backgroundColor = "hsla(120,100%,50%,0.5)";
+       boton.classList.add("boton-ingresoUno");
+       boton.classList.remove("error");
+       boton.classList.add("boton-ingreso");
        // ////////////////// CREACION DE ELEMNENTO IMG Y AGREGAR AL HTML ////////////////
        const imagen = document.createElement("img");
        imagen.src = "img/encuesta.png";
-       imagen.style.width = "70px";
+       imagen.style.width = "60px";
        contenedor.appendChild(imagen);
    }
 }

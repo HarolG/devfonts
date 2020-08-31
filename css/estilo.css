@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../img/fondo3.png") no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #f5f5dc;
+    margin-bottom: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hd-box1 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hd-box2 {
+    width: 70%;
+    height: 100%;
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.texto {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-family: Verdana;
+}
+
+.texto:hover{
+    background-color: #71c8f0;
+    border-radius: 2rem;
+}
+.login-box {
+    width: 320px;
+    height: 420px;
+    background-color: hsla(60, 56%, 91%, 0.8);
+    color: black;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 20px;
+}
+
+.login-box .avatar {
+    width: 320px;
+    height: 175px;
+    border-radius: 1%;
+    position: absolute;
+    top: -120px;
+    left: calc(50% - 160px);
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.boton-ingreso {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: cornflowerblue;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 170px;
+    margin-left: 50px;
+}
+
+.boton-ingresoUno:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.login-box a:hover {
+    color: black;
+    text-align: left;
+}
+
+.header {
+    background: beige;
+    color: black;
+    padding: 2rem 0;
+
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    letter-spacing: 5px;
+    font-size: 1.3em;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 9px;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.navigation ul li a:hover {
+    background: #71c8f0;
+    border-radius: 2rem;
+}
+
+.logoimg {
+    width: 188px;
+    height: 37px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: hsla(0,100%,50%,0.3);
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 170px;
+    margin-left: 50px;
+}

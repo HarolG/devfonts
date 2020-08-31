@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesión | JMPP</title>
+     <link rel="stylesheet" href="css/estilo.css">
+     <link  rel="icon" href="../image/favicon.jpg" type="image/png"/>
+</head>
+
+<body>
+
+    <header>
+        <div class="hd-box1">
+            <img src="img/shale loco k fondazo.png" alt="" width="300" height="60">
+        </div>
+        <div class="hd-box2">
+            <a href="index.html" class="texto texto1">Inicio</a>
+            <a href="registro.html" class="texto texto2">Registrarse</a>
+        </div>
+    </header>
+
+    <div class="login-box">
+         <h1>LOGIN DEVFONTS</h1>
+        <form method="POST" action="includes/validar.php" autocomplete="off">
+            <!--USERNAME INPUT-->
+            <label for="username">Usuario</label>
+            <input type="text" name="documento" id="documento" placeholder="&#128273;Ingrese Documento de Identidad">
+            <!--PASSWORD INPUT-->
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="&#128273;Ingrese Password">
+            <!--/////   INGRESO DE LA IMAGEN DE VALIDACION Y BOTON DE ENVIO   /////-->
+            <div class="flex" id="contenedor"></div>
+            <button class="boton-ingreso boton-ingresoUno" id="boton">Enviar</button><br>
+            <a href="#">¿Recordar Contraseña?</a><br>
+            <a href="../register/register.html">¿Registrarme?</a>
+        </form>
+     </div>
+     <script src="./javascript/ingreso.js"></script>
+</body>
+</html>

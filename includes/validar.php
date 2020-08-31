@@ -11,9 +11,9 @@
         $_SESSION["tipo"] = $arreglo["id_tip_usu"];
         $_SESSION["nombre"] = $arreglo["nombre"];
         $_SESSION["tipo-usuario"]= $arreglo["nom_tip_usu"];
-        if($_SESSION["tipo"]== 1){
+        if($_SESSION["tipo"]== 1 ){
             header("location: ../administrador/administrador.php");
-        }elseif($_SESSION["tipo"] == 2){
+        }elseif($_SESSION["tipo"] == 2 ){
             header("location: ../gerenteUno/gerente.php");
         }else{
             header("location: ../gerenteDos/gerente.php");
